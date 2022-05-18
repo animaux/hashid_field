@@ -4,7 +4,7 @@
     <name>Hashid Field</name>
     <description>Enables you to add a unique and read-only hash to an entry, generated using the entry ID.</description>
 
-    <repo type="github">https://github.com/nathanhornby/hashid_field</repo>
+    <repo type="github">https://github.com/animaux/hashid_field</repo>
     <url type="discuss">http://www.getsymphony.com/discuss/thread/106936/</url>
 
     <types>
@@ -19,7 +19,10 @@
     </authors>
 
     <releases>
-        <release version="2.0.2" date="2018-07-31" min="2.4" max="2.6.x">
+        <release version="2.0.3" date="2022-05-18" min="2.7.10" max="2.7.x">
+          + PHP 8.1 fixes (may require PHP 7)
+        </release>
+        <release version="2.0.2" date="2018-07-31" min="2.4" max="2.7.x">
             <![CDATA[
 - Critical fix: Case sensitivity support (#40)
             ]]>

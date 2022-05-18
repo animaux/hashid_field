@@ -145,6 +145,8 @@ class FieldHashid_field extends Field implements ExportableField
         $label = Widget::Label($this->get('label'));
 
         // Display the hash and appropriate messaging.
+        
+        $data['value'] = $data['value'] ?? null;
         $label->appendChild(Widget::Input('fields'.$fieldnamePrefix.'['.$this->get('element_name').']'.$fieldnamePostfix, $data['value'], 'text', array('readonly' => 'readonly') ));
 
         if (strlen($data['value']) === 0) {
